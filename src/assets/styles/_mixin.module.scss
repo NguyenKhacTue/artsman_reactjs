@@ -1,3 +1,10 @@
-@mixin radius_common ($radius:10px){
+@mixin radius_common($radius: 10px) {
     border-radius: $radius;
+}
+
+@mixin btn($w, $h, $color, $radius) {
+    width: $w;
+    height: $h;
+    background-color: $color;
+    @include radius_common($radius);
 }
