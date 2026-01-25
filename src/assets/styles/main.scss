@@ -1,4 +1,4 @@
-@use 'normalize.css';
-@use './variable.module.scss';
-@use './mixin.module.scss';
-@import './global.module.scss';
+@use 'normalize.css' as *;
+@use './variable.module.scss' as *;
+@use './mixin.module.scss' as *;
+@use './global.module.scss' as *;
