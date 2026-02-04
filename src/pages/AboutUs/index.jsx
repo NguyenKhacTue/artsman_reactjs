@@ -60,10 +60,10 @@ function AboutUs() {
                         <div className={line}>
                             <div className={title}>
                                 <div className={textS}>
-                                    we try our best for you
+                                    Chúng Tôi Đang Cố Gắng Tạo Ra
                                 </div>
                                 <div className={textL}>
-                                    Welcome to the Marseille04 Shop
+                                    Website Thương Hiệu Artsman
                                 </div>
                             </div>
                         </div>
