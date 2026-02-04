@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <defs>
+    <style>
+      .artsman-text { font-family: 'Georgia', serif; font-weight: bold; font-size: 48px; fill: #000; letter-spacing: 2px; }
+      .subtitle { font-family: 'Georgia', serif; font-size: 14px; fill: #000; letter-spacing: 1px; }
+      .line { stroke: #000; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Main title -->
+  <text x="100" y="90" class="artsman-text" text-anchor="middle">ARTS MAN</text>
+  
+  <!-- Decorative lines -->
+  <line x1="40" y1="105" x2="75" y2="105" class="line"/>
+  <line x1="125" y1="105" x2="160" y2="105" class="line"/>
+  
+  <!-- Subtitle -->
+  <text x="100" y="130" class="subtitle" text-anchor="middle">Official Store</text>
+</svg>
