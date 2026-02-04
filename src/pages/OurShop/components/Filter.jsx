@@ -63,7 +63,7 @@ function Filter() {
                         color: '#555'
                     }}
                 >
-                    Show
+                    Hiển thị
                 </div>
                 <SelectBox
                     options={showOptions}

@@ -116,15 +116,15 @@ function Checkout() {
         <div className={container}>
             <div className={leftBody}>
                 <p className={coupon}>
-                    Have a coupon? <span>Click here to enter</span>
+                    Có mã giảm giá? <span>Nhấp vào đây để nhập</span>
                 </p>
 
-                <p className={title}>BILLING DETAILS</p>
+                <p className={title}>CHI TIẾT HÓA ĐƠN</p>
 
                 <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
                     <div className={cls(row, row2Column)}>
                         <InputCustom
-                            label={'First Name'}
+                            label={'Tên'}
                             type={'text'}
                             isRequired
                             register={register('firstName', {
@@ -134,7 +134,7 @@ function Checkout() {
                             isError={errors.firstName}
                         />
                         <InputCustom
-                            label={'Last Name'}
+                            label={'Họ'}
                             type={'text'}
                             isRequired
                             register={register('lastName', {
@@ -147,7 +147,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Company Name (optional)'}
+                            label={'Tên công ty (tùy chọn)'}
                             type={'text'}
                             register={register('companyName')}
                             // isError={errors.companyName}
@@ -156,7 +156,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Country / Region'}
+                            label={'Quốc gia / Vùng'}
                             dataOptions={countries}
                             isRequired
                             register={register('country', {
@@ -168,7 +168,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Street address'}
+                            label={'Địa chỉ đường phố'}
                             type={'text'}
                             isRequired
                             register={register('street', {
@@ -180,7 +180,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'apartment'}
+                            label={'Căn hộ'}
                             type={'text'}
                             isShowlabel={false}
                             register={register('apartment')}
@@ -189,7 +189,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Town / City'}
+                            label={'Thị trấn / Thành phố'}
                             dataOptions={cities}
                             isRequired
                             register={register('cities', {
@@ -201,7 +201,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'State'}
+                            label={'Tỉnh'}
                             dataOptions={states}
                             isRequired
                             register={register('state', {
@@ -213,7 +213,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Phone'}
+                            label={'Điện thoại'}
                             type={'text'}
                             isRequired
                             register={register('phone', {
@@ -225,7 +225,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'ZIP code'}
+                            label={'Mã bưu chính'}
                             type={'text'}
                             isRequired
                             register={register('zipCode', {
@@ -237,7 +237,7 @@ function Checkout() {
 
                     <div className={row}>
                         <InputCustom
-                            label={'Email Address'}
+                            label={'Địa chỉ email'}
                             type={'text'}
                             isRequired
                             register={register('email', {

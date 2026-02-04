@@ -9,8 +9,8 @@ function AdvanceHeadling() {
             <div className={container}>
                 <div className={headline}></div>
                 <div className={containerMiddleBox}>
-                    <p className={des}>don't miss super offers</p>
-                    <p className={title}>Our best products</p>
+                    <p className={des}>Ưu đãi đặc biệt</p>
+                    <p className={title}>Sản phẩm tốt nhất</p>
                 </div>
                 <div className={headline}></div>
             </div>

@@ -13,7 +13,7 @@ function RightBody({ handleExternalSubmit }) {
 
     return (
         <div className={rightBody}>
-            <p className={title}> YOUR ORDER</p>
+            <p className={title}> ĐƠN HÀNG CỦA BẠN</p>
 
             <div className={items}>
                 {listProductCart.map((product) => (
@@ -30,28 +30,28 @@ function RightBody({ handleExternalSubmit }) {
             </div>
 
             <div className={subTotal}>
-                <p>Subtotal</p>
+                <p>Tổng phụ</p>
                 <p>${handleTotalPrice(listProductCart).toFixed(2)}</p>
             </div>
 
             <div className={total}>
-                <p>TOTAL</p>
+                <p>TỔNG CỘNG</p>
                 <p>${handleTotalPrice(listProductCart).toFixed(2)}</p>
             </div>
 
             <div className={payment}>
                 <input type='radio' id='qr' name='fav_language' value='qr' /> {' '}
-                <label for='qr'>QR CODE</label>
+                <label for='qr'>MÃ QR</label>
             </div>
 
             <div>
-                <input type='radio' id='cod' name='fav_language' value='cod' /> {' '}
-                <label for='cod'>Cash on delivery</label>
+                <input type='radio' id='cod' name='fav_language' value='cod' />{' '}
+                <label for='cod'>Thanh toán khi giao hàng</label>
             </div>
 
             <div className={btn}>
                 <Button
-                    content={'PLACE ORDER'}
+                    content={'ĐẶT ĐƠN HÀNG'}
                     onClick={handleExternalSubmit}
                 />
             </div>

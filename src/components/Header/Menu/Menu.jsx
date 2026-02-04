@@ -13,7 +13,7 @@ function Menu({ content, href }) {
     const navigate = useNavigate();
 
     const handleClickShowLogin = () => {
-        if (content === 'Sign in' && !userInfo) {
+        if (content === 'Đăng Nhập' && !userInfo) {
             setIsOpen(true);
             setType('login');
 
@@ -24,15 +24,15 @@ function Menu({ content, href }) {
     };
 
     const handleRenderText = (content) => {
-        if (content === 'Sign in' && userInfo) {
-            return `Hello: ${userInfo?.username}`;
+        if (content === 'Đăng Nhập' && userInfo) {
+            return `Xin chào: ${userInfo?.username}`;
         } else {
             return content;
         }
     };
 
     const handleHover = () => {
-        if (content === 'Sign in' && userInfo) {
+        if (content === 'Đăng Nhập' && userInfo) {
             setIsShowSubMenu(true);
         }
     };

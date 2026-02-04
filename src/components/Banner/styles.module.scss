@@ -4,8 +4,8 @@
 .container {
     @include flex_box_custom(center, center, 0px);
 
-    background-image: url(../../assets/images/Banner-Ecommerse.jpeg);
-    min-height: 750px;
+    background-image: url(../../assets/images/banner.png);
+    min-height: 850px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -176,7 +176,7 @@ function ProductItem({
 
                 {sizeChoose && (
                     <div className={btnClear} onClick={() => handleClearSize()}>
-                        clear
+                        xóa
                     </div>
                 )}
 
@@ -194,7 +194,7 @@ function ProductItem({
                             color: '#888'
                         }}
                     >
-                        Brand 01
+                        Thương hiệu 01
                     </div>
                 )}
                 <div
@@ -217,7 +217,9 @@ function ProductItem({
                                 isLoading ? (
                                     <LoadingTextCommon />
                                 ) : (
-                                    'ADD TO CART'
+                                    <div style={{ whiteSpace: 'nowrap' }}>
+                                        THÊM VÀO GIỎ HÀNG
+                                    </div>
                                 )
                             }
                             onClick={handleAddToCart}

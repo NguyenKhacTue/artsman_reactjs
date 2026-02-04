@@ -21,7 +21,7 @@ function SaleHomepage() {
                 />
             </div>
             <div>
-                <h2 className={title}>Sale Of The Year</h2>
+                <h2 className={title}>Sale Cuối Năm</h2>
                 <p className={des}>
                     Libero sed faucibus facilisis fermentum. Est nibh sed massa
                     sodales.

@@ -16,37 +16,37 @@ function ReviewProduct() {
 
     return (
         <div className={containerReview}>
-            <div className={reviews}>REVIEWS</div>
+            <div className={reviews}>NHẬN XÉT</div>
 
-            <p className={noreview}>There are no reviews yet.</p>
+            <p className={noreview}>Chưa có nhận xét nào.</p>
 
             <div className={replyForm}>
                 <div className={commentReplyTitle}>
-                    BE THE FIRST TO REVIEW "10K YELLOW GOLD"
+                    HÃY LÀ NGƯỜI ĐẦU TIÊN NHẬN XÉT "VÀNG 10K"
                 </div>
 
                 <p className={commentTotes}>
-                    Your email address will not be published. Required fields
-                    are marked
+                    Địa chỉ email của bạn sẽ không được công bố. Các trường bắt
+                    buộc được đánh dấu
                 </p>
 
                 <form action=''>
                     {/* RATING */}
                     <FormItem
-                        label={'Your rating'}
+                        label={'Đánh giá của bạn'}
                         isRequired
                         typeChildren='rating'
                     />
 
                     {/* AREA */}
                     <FormItem
-                        label={'Your review'}
+                        label={'Nhận xét của bạn'}
                         isRequired
                         typeChildren='textarea'
                     />
 
                     {/* NAME */}
-                    <FormItem label={'Name'} isRequired typeChildren='input' />
+                    <FormItem label={'Tên'} isRequired typeChildren='input' />
 
                     {/* EMAIL */}
                     <FormItem label={'Email'} isRequired typeChildren='input' />
@@ -54,13 +54,13 @@ function ReviewProduct() {
                     <div className={commentFormCookiesConsent}>
                         <input type='checkbox' />
                         <span>
-                            Save my name, email, and website in this browser for
-                            the next time I comment.
+                            Lưu tên, email và trang web của tôi trong trình
+                            duyệt này cho lần nhận xét tiếp theo.
                         </span>
                     </div>
 
                     <div className={btnSubmit}>
-                        <Button content='SUBMIT' />
+                        <Button content='GỬI' />
                     </div>
                 </form>
             </div>

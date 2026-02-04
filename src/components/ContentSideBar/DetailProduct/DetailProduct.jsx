@@ -94,7 +94,7 @@ function DetailProduct() {
             <div className={price}>${detailProduct.price}</div>
             <div className={des}>{detailProduct.description}</div>
 
-            <div className={label}>Size {chooseSize}</div>
+            <div className={label}>Kích cỡ {chooseSize}</div>
             <div className={boxSize}>
                 {detailProduct.size.map((item, index) => (
                     <div
@@ -117,7 +117,7 @@ function DetailProduct() {
                     }}
                     onClick={handleClearSize}
                 >
-                    clear
+                    xóa
                 </div>
             )}
 
@@ -132,8 +132,8 @@ function DetailProduct() {
                 <div>
                     <Button
                         content={
-                            <div>
-                                <PiShoppingCartThin /> ADD TO CART
+                            <div style={{ whiteSpace: 'nowrap' }}>
+                                <PiShoppingCartThin /> THÊM VÀO GIỎ HÀNG
                             </div>
                         }
                         onClick={handleAddToCart}
@@ -143,39 +143,39 @@ function DetailProduct() {
 
             <div className={boxOr}>
                 <div className={line} />
-                <div className={or}>OR</div>
+                <div className={or}>HOẶC</div>
                 <div className={line} />
             </div>
 
             <Button
                 content={
-                    <div>
-                        <PiShoppingCartThin /> SELECT OPTIONS
+                    <div style={{ whiteSpace: 'nowrap' }}>
+                        <PiShoppingCartThin /> CHỌN TÙY CHỌN
                     </div>
                 }
             />
 
             <div className={boxAddOther}>
                 <TfiReload style={{ fontSize: '23px' }} />
-                <div>Add to compare</div>
+                <div>Thêm vào so sánh</div>
             </div>
 
             <div className={boxAddOther}>
                 <CiHeart style={{ fontSize: '25px' }} />
-                <div>Add to wishlist</div>
+                <div>Thêm vào danh sách yêu thích</div>
             </div>
 
             <div className={boxFooter}>
                 SKU: <span>12349</span>
             </div>
             <div className={boxFooter}>
-                Category: <span>Pullovers</span>
+                Danh mục: <span>Áo len</span>
             </div>
             <div className={boxFooter}>
-                Estimated delivery: <span>3 - 5 days</span>
+                Dự kiến giao hàng: <span>3 - 5 ngày</span>
             </div>
             <div className={boxFooter}>
-                Share:{' '}
+                Chia sẻ:{' '}
                 <span>
                     <FaXTwitter />
                     <FaFacebookF />

@@ -17,8 +17,18 @@ function BoxIcon({ type, href }) {
         }
     };
 
+    const handleClick = () => {
+        if (href) {
+            window.open(href, '_blank');
+        }
+    };
+
     return (
-        <div className={boxIcon}>
+        <div
+            className={boxIcon}
+            onClick={handleClick}
+            style={{ cursor: href ? 'pointer' : 'default' }}
+        >
             <img src={handleRenderIcon(type)} alt={type} />
         </div>
     );

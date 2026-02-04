@@ -49,7 +49,7 @@ function Cart() {
         >
             <HeaderSideBar
                 icon={<PiShoppingCartLight style={{ fontSize: '30px' }} />}
-                title='CART'
+                title='GIỎ HÀNG'
             />
 
             {listProductCart.length ? (
@@ -83,25 +83,25 @@ function Cart() {
 
                     <div>
                         <div className={total}>
-                            <p>SUBTOTAL:</p>
+                            <p>TỔNG CỘNG:</p>
                             <p className={price}>${subTotal.toFixed(2)}</p>
                         </div>
 
                         <div className={boxBtn}>
                             <Button
-                                content={'VIEW CART'}
+                                content={'XEM GIỎ HÀNG'}
                                 onClick={handleNavigateToCart}
                             />
-                            <Button content={'CHECKOUT'} isPriamry={false} />
+                            <Button content={'THANH TOÁN'} isPriamry={false} />
                         </div>
                     </div>
                 </div>
             ) : (
                 <div className={boxEmpty}>
-                    <div>No products in the cart.</div>
+                    <div>Không Có Sản Phẩm Trong Giỏ Hàng.</div>
                     <div className={boxBtnEmpty}>
                         <Button
-                            content={'RETURN TO SHOP'}
+                            content={'Quay Về Cửa Hàng'}
                             onClick={handleNavigateToShop}
                         />
                     </div>

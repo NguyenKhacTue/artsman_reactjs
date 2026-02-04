@@ -22,7 +22,7 @@ function ListProducts() {
         <div className={sectionListProduct}>
             <MainLayout>
                 {isLoading ? (
-                    <>Loading...</>
+                    <>Đang tải...</>
                 ) : (
                     <>
                         <div className={isShowGrid ? containerProduct : ''}>
@@ -50,7 +50,7 @@ function ListProducts() {
                                         isLoadMore ? (
                                             <LoadingTextCommon />
                                         ) : (
-                                            'LOAD MORE PRODUCT'
+                                            'TẢI THÊM SẢN PHẨM'
                                         )
                                     }
                                     onClick={handleLoadMore}

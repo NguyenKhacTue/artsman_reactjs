@@ -37,12 +37,12 @@ const CartTable = ({ listProductCart, getData, isLoading, getDataDelete }) => {
             <table>
                 <thead>
                     <tr>
-                        <th>PRODUCT</th>
+                        <th>SẢN PHẨM</th>
                         <th />
-                        <th>PRICE</th>
+                        <th>GIÁ</th>
                         <th>SKU</th>
-                        <th>QUANTITY</th>
-                        <th>SUBTOTAL</th>
+                        <th>SỐ LƯỢNG</th>
+                        <th>TỔNG CỘNG</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -5,6 +5,12 @@ import { SidebarProvider } from '@/contexts/SideBarProvider';
 import SideBar from '@components/Sidebar/Sidebar';
 import { ToastProvider } from '@/contexts/ToastProvider';
 import { StoreProvider } from '@/contexts/storeProvider';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
+
+function ScrollToTop() {
+    useScrollToTop();
+    return null;
+}
 
 function App() {
     return (
@@ -12,6 +18,7 @@ function App() {
             <ToastProvider>
                 <SidebarProvider>
                     <BrowserRouter>
+                        <ScrollToTop />
                         <SideBar />
 
                         <Suspense fallback={<div>Loading...</div>}>

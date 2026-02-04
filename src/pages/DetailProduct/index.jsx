@@ -69,12 +69,12 @@ function DetailProduct() {
     const dataAccordionMenu = [
         {
             id: 1,
-            titleMenu: 'ADDITIONAL INFORMATION',
+            titleMenu: 'THÔNG TIN BỔ SUNG',
             content: <InformationProduct />
         },
         {
             id: 2,
-            titleMenu: 'REVIEW (0)',
+            titleMenu: 'NHẬN XÉT (0)',
             content: <ReviewProduct />
         }
     ];
@@ -162,12 +162,12 @@ function DetailProduct() {
         setIsLoadingBtnBuyNow(true);
         addProductToCart(data)
             .then((res) => {
-                toast.success('Add Product to cart successfully!');
+                toast.success('Thêm sản phẩm vào giỏ hàng thành công!');
                 setIsLoadingBtnBuyNow(false);
                 navigate('/cart');
             })
             .catch((err) => {
-                toast.error('Add Product to cart failed!');
+                toast.error('Thêm sản phẩm vào giỏ hàng thất bại!');
                 setIsLoadingBtnBuyNow(false);
             });
     };
@@ -186,9 +186,9 @@ function DetailProduct() {
             <div className={container}>
                 <MainLayout>
                     <div className={navigateSection}>
-                        <div>Home {'>'} Men</div>
+                        <div>Trang chủ {'>'} Nam</div>
                         <div className='' style={{ cursor: 'pointer' }}>
-                            {'<'} Return to previous page{' '}
+                            {'<'} Quay lại trang trước{' '}
                         </div>
                     </div>
 
@@ -200,10 +200,10 @@ function DetailProduct() {
                         <>
                             {!data ? (
                                 <div className={emptyData}>
-                                    <p>No Result</p>
+                                    <p>Không có kết quả</p>
                                     <div>
                                         <Button
-                                            content={'Back to Our Shop'}
+                                            content={'Quay lại Cửa hàng'}
                                             onClick={() => navigate('/shop')}
                                         />
                                     </div>
@@ -223,7 +223,7 @@ function DetailProduct() {
                                         </p>
 
                                         <p className={titleSize}>
-                                            Size {sizeSelected}
+                                            Kích cỡ {sizeSelected}
                                         </p>
                                         <div className={boxSize}>
                                             {data?.size.map(
@@ -257,7 +257,7 @@ function DetailProduct() {
                                                 className={clear}
                                                 onClick={handleClearSizeSeleted}
                                             >
-                                                clear
+                                                xóa
                                             </p>
                                         )}
 
@@ -290,7 +290,7 @@ function DetailProduct() {
                                                         isLoadingBtn ? (
                                                             <LoadingTextCommon />
                                                         ) : (
-                                                            'Add to Cart'
+                                                            'Thêm vào giỏ hàng'
                                                         )
                                                     }
                                                     customClassname={
@@ -304,7 +304,7 @@ function DetailProduct() {
 
                                         <div className={orSection}>
                                             <div></div>
-                                            <span>OR</span>
+                                            <span>HOẶC</span>
                                             <div></div>
                                         </div>
 
@@ -314,7 +314,7 @@ function DetailProduct() {
                                                     isLoadingBtnBuyNow ? (
                                                         <LoadingTextCommon />
                                                     ) : (
-                                                        'Buy now'
+                                                        'Mua ngay'
                                                     )
                                                 }
                                                 customClassname={
@@ -341,7 +341,8 @@ function DetailProduct() {
 
                                         <div className={info}>
                                             <div>
-                                                Brand: <span>Brand 03</span>
+                                                Thương hiệu:{' '}
+                                                <span>Brand 03</span>
                                             </div>
 
                                             <div>
@@ -349,7 +350,7 @@ function DetailProduct() {
                                             </div>
 
                                             <div>
-                                                Category: <span>Men</span>
+                                                Danh mục: <span>Nam</span>
                                             </div>
                                         </div>
 
@@ -378,7 +379,7 @@ function DetailProduct() {
 
                     {relatedData.length ? (
                         <div>
-                            <h2>Related products</h2>
+                            <h2>Sản phẩm liên quan</h2>
 
                             <SliderCommon
                                 data={relatedData}

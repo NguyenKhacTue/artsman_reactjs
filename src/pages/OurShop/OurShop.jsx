@@ -23,13 +23,14 @@ function OutShop() {
                 <div className={container}>
                     <div className={functionBox}>
                         <div>
-                            Home &gt; <span className={specialText}>Shop</span>
+                            Trang chủ &gt;{' '}
+                            <span className={specialText}>Cửa hàng</span>
                         </div>
                         <div
                             className={btnBack}
                             onClick={() => handleBackPreviousPage()}
                         >
-                            &lt; Return to previous page
+                            &lt; Quay lại trang trước
                         </div>
                     </div>
                 </div>

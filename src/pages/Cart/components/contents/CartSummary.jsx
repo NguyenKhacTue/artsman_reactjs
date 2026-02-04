@@ -30,26 +30,26 @@ const CartSummary = () => {
     return (
         <div className={containerRight}>
             <div className={containerSummary}>
-                <div className={title}>CART TOTALS</div>
+                <div className={title}>TỔNG GIỎ HÀNG</div>
 
                 <div className={cls(boxTotal, subTotal)}>
-                    <div>Subtotal</div>
+                    <div>Tổng phụ</div>
                     <div className={price}>
                         ${handleTotalPrice(listProductCart).toFixed(2)}
                     </div>
                 </div>
 
                 <div className={cls(boxTotal, totals)}>
-                    <div>TOTAL</div>
+                    <div>TỔNG CỘNG</div>
                     <div>${handleTotalPrice(listProductCart).toFixed(2)}</div>
                 </div>
 
                 <Button
-                    content={'PROCEED TO CHECKOUT'}
+                    content={'TIẾN HÀNH THANH TOÁN'}
                     onClick={handleProcessCheckout}
                 />
                 <div className={space} />
-                <Button content={'CONTINUE SHOPPING'} isPriamry={false} />
+                <Button content={'TIẾP TỤC SHOPPING'} isPriamry={false} />
 
                 {isLoading && <LoadingCart />}
             </div>

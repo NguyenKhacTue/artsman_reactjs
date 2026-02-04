@@ -101,15 +101,13 @@ function Contents() {
 
                         <div className={boxFooter}>
                             <div className={boxCoupon}>
-                                <input type='text' placeholder='Coupon code' />
+                                <input type='text' placeholder='Mã giảm giá' />
                                 <Button content={'OK'} isPriamry={false} />
                             </div>
 
                             <div className={boxBtnDelete}>
                                 <Button
-                                    content={
-                                        <div>&#128465; CLEAR SHOPPING CART</div>
-                                    }
+                                    content={<div>&#128465; XÓA GIỎ HÀNG</div>}
                                     isPriamry={false}
                                     onClick={handleDeleteCart}
                                 />
@@ -127,15 +125,15 @@ function Contents() {
                         }}
                     />
                     <div className={titleEmpty}>
-                        YOUR SHOPPING CART IS EMPTY
+                        GIỎ HÀNG SHOPPING CỦA BẠN TRỐNG
                     </div>
                     <div>
-                        We invite you to get acquainted with an assortment of
-                        our shop. Surely you can find something for yourself!
+                        Chúng tôi mời bạn khám phá bộ sưu tập của cửa hàng. Chắc
+                        chắn bạn sẽ tìm được thứ gì đó cho mình!
                     </div>
                     <div className={boxBtnEmpty}>
                         <Button
-                            content={'RETURN TO SHOP'}
+                            content={'Quay Về Cửa Hàng'}
                             onClick={handleNavigateToShop}
                         />
                     </div>

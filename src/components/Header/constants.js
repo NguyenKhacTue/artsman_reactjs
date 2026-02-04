@@ -1,16 +1,16 @@
 const dataBoxIcon = [
-    { type: 'fb', href: '#' },
-    { type: 'ins', href: '#' },
-    { type: 'shopee', href: '#' }
+    { type: 'fb', href: 'https://www.facebook.com/profile.php?id=61565109110640'},
+    { type: 'ins', href: 'https://www.instagram.com/artsmansport/' },
+    { type: 'shopee', href: 'https://shopee.vn/artsman.vn' }
 ];
 
 const dataMenu = [
-    { content: 'Elements', href: '#' },
-    { content: 'Our Shop', href: '/shop' },
-    { content: 'About us', href: '/about-us' },
-    { content: 'Contacts', href: '#' },
-    { content: 'Search', href: '#' },
-    { content: 'Sign in', href: '#' }
+    { content: 'Trang Chủ', href: '/' },
+    { content: 'Sản Phẩm', href: '/shop' },
+    { content: 'Giới Thiệu', href: '/about-us' },
+    { content: 'Liên Hệ', href: '#' },
+    { content: 'Tìm Kiếm', href: '#' },
+    { content: 'Đăng Nhập', href: '#' }
 ];
 
 export { dataBoxIcon, dataMenu };

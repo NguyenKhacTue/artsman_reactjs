@@ -5,23 +5,23 @@ import ChatIcon from '@icons/svgs/chatIcon.svg';
 
 export const dataInfo = [
     {
-        title: 'Fastest Shipping',
-        description: 'Order at $39 order',
+        title: 'Giao Hàng Toàn Quốc',
+        description: '  Đăt hàng nhanh chóng',
         src: TruckIcon
     },
     {
-        title: '100% Safe Payments',
-        description: '9 month installments',
+        title: 'Thanh Toán An Toàn',
+        description: '  Hỗ trợ nhiều hình thức thanh toán',
         src: DebitCardIcon
     },
     {
-        title: '14-Days Return',
-        description: 'Shop with confidence',
+        title: 'Hoàn Trả 14 Ngày',
+        description: ' Đổi trả dễ dàng',
         src: BoxIcon
     },
     {
-        title: '24/7 Online Support',
-        description: 'Delivered to home',
+        title: 'Hỗ Trợ 24/7',
+        description: '  Luôn sẵn sàng hỗ trợ',
         src: ChatIcon
     }
 ];

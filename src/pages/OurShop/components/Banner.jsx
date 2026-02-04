@@ -13,10 +13,10 @@ function Banner() {
                     <div className={countDownBox}>
                         <CountdownTimer targetDate={targetDate} />
                     </div>
-                    <div className={title}>The Classics Make A Comeback</div>
+                    <div className={title}>Những Điều Cổ Điển Quay Lại</div>
 
                     <div className={boxBtn}>
-                        <Button content='Buy Now' />
+                        <Button content='Mua Ngay' />
                     </div>
                 </div>
             </div>

@@ -4,9 +4,9 @@ function InformationProduct() {
     const { itemInfo, containerInfo, title, content } = styles;
 
     const dataInfo = [
-        { id: 1, title: 'Size', content: 'S, M, L' },
-        { id: 2, title: 'Material', content: 'Fleece' },
-        { id: 3, title: 'Color', content: 'Black, Blue' }
+        { id: 1, title: 'Kích cỡ', content: 'S, M, L' },
+        { id: 2, title: 'Chất liệu', content: 'Fleece' },
+        { id: 3, title: 'Màu sắc', content: 'Đen, Xanh' }
     ];
 
     return (

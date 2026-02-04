@@ -8,9 +8,9 @@ function Steps() {
     const { currentStep } = useContext(StepperContext);
 
     const dataSteps = [
-        { number: 1, content: 'Shopping cart' },
-        { number: 2, content: 'Checkout' },
-        { number: 3, content: 'Order status' }
+        { number: 1, content: 'Giỏ hàng' },
+        { number: 2, content: 'Thanh toán' },
+        { number: 3, content: 'Trạng thái đơn hàng' }
     ];
 
     return (
@@ -34,7 +34,7 @@ function Steps() {
             </div>
 
             <div className={textNoti}>
-                You are out of time! Checkout now to avoid losing your order!
+                Hết thời gian! Thanh toán ngay để tránh mất đơn hàng của bạn!
             </div>
         </div>
     );

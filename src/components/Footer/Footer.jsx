@@ -5,12 +5,23 @@ function MyFooter() {
     const { container, boxNav } = styles;
     return (
         <div className={container}>
-            <div>
+            <div
+                style={{
+                    textAlign: 'center',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
+            >
                 <img
-                    src='https://xstore.b-cdn.net/elementor2/marseille04/wp-content/uploads/sites/2/2022/12/marseille-logo.png'
-                    alt=''
-                    width={160}
-                    height={55}
+                    src='http://localhost:5173/src/assets/icons/images/anhlogo.png'
+                    alt='Logo'
+                    width={150}
+                    height={150}
+                    style={{
+                        filter: 'invert(1) brightness(1.2)',
+                        borderRadius: '8px'
+                    }}
                 />
             </div>
 
@@ -26,7 +37,7 @@ function MyFooter() {
                         textAlign: 'center'
                     }}
                 >
-                    Guaranteed safe checkout
+                    Đảm Bảo Thanh Toán An Toàn
                 </p>
                 <img
                     src='https://xstore.b-cdn.net/elementor2/marseille04/wp-content/uploads/sites/2/elementor/thumbs/Icons-123-pzks3go5g30b2zz95xno9hgdw0h3o8xu97fbaqhtb6.png'
@@ -35,7 +46,7 @@ function MyFooter() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                Copyright © 2024 HLTCD theme. Created by HLTCD
+                Copyright © 2025 Artsman. All Rights Reserved.
             </div>
         </div>
     );
