@@ -1,8 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 import styles from './styles.module.scss';
 
 function Banner() {
+    const navigate = useNavigate();
     const { container, content, title, des } = styles;
+
+    const handleGoToShop = () => {
+        navigate('/shop');
+    };
+
     return (
         <div className={container}>
             <div className={content}>
@@ -17,7 +24,7 @@ function Banner() {
                         width: '172px'
                     }}
                 >
-                    <Button content={'Go to shop'} />
+                    <Button content={'Go to shop'} onClick={handleGoToShop} />
                 </div>
             </div>
         </div>
